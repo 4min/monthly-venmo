@@ -15,7 +15,7 @@ def main(now):
   for var in env_vars:
     actualVars.append(get_env(var))
 
-  access_token, chat_id, bot_token, k_friend_id, c_friend_id, w_friend_id, j_friend_id = actualVars
+  access_token, chat_id, bot_token, i_friend_id, j_friend_id, k_friend_id, l_friend_id, s_friend_id, y_friend_id = actualVars
 
   month = get_month(now)
   venmo = Venmo(access_token)
@@ -23,20 +23,41 @@ def main(now):
 
   friends =[
     {
-      "name": "Z",
-      "id": z_friend_id,
-      "amount": 45.00,
+      "name": "I",
+      "id": i_friend_id,
+      "amount": 40.00,
+      "addons": ""
     },
-#     {
-#       "name": "J",
-#       "id": u_friend_id,
-#       "amount":"40",
-#     },
-#     {
-#       "name": "I",
-#       "id": i_friend_id,
-#       "amount":"40"
-#     },
+    {
+      "name": "J",
+      "id": j_friend_id,
+      "amount": 40.00,
+      "addons": ""
+    },
+    {
+      "name": "K",
+      "id": k_friend_id,
+      "amount": 40.00,
+      "addons": ""
+    },
+    {
+      "name": "L",
+      "id": l_friend_id,
+      "amount": 30.00,
+      "addons": "and YT Premium"
+    },
+    {
+      "name": "S",
+      "id": s_friend_id,
+      "amount": 45.00,
+      "addons": "and YT Premium"
+    },
+    {
+      "name": "Y",
+      "id": y_friend_id,
+      "amount": 45.00,
+      "addons": "and YT Premium"
+    },
   ]
 
   successfulRequests = []
@@ -45,8 +66,9 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "T-Mobile bill dated " + month + " — Sent by Ilya's assistant iHustler"
+    description = "TEST T-Mobile bill dated " + month + " " + friend["addons"]
     amount = friend["amount"]
+    # print(venmo.get_user_id_by_username(id))
     message = f"""✅ Good news everyone!
 
 I have successfully requested money from {name}.
