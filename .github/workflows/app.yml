@@ -1,13 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Run Script
+name: Send requests
 
 on:
   schedule:
-    # 4pm UTC on the 7th of the month
-    # https://crontab.guru/#0_16_7_*_*
-    - cron: "0 16 7 * *"
+    # On the 9th of the month at 4pm UTC = 9am PST
+    # https://crontab.guru/#0_16_9_*_*
+    - cron: "0 16 9 * *"
   workflow_dispatch:
 
 jobs:

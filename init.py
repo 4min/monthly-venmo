@@ -66,7 +66,7 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "TEST T-Mobile bill dated " + month + " " + friend["addons"]
+    description = "T-Mobile bill dated " + month + " " + friend["addons"]
     amount = friend["amount"]
     # print(venmo.get_user_id_by_username(id))
     message = f"""✅ Good news everyone!
