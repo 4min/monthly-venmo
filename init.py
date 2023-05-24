@@ -23,17 +23,20 @@ def main(now):
 
   friends =[
     {
-      "name": "KRam",
-      "id": k_friend_id,
+      "name": "Z",
+      "id": z_friend_id,
+      "amount": 45.00,
     },
-    {
-      "name": "Chrissy",
-      "id": c_friend_id,
-    },
-    {
-      "name": "Will",
-      "id": w_friend_id,
-    },
+#     {
+#       "name": "J",
+#       "id": u_friend_id,
+#       "amount":"40",
+#     },
+#     {
+#       "name": "I",
+#       "id": i_friend_id,
+#       "amount":"40"
+#     },
   ]
 
   successfulRequests = []
@@ -42,17 +45,26 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "Spotify for the month of " + month + "— Sent by Joe's Assistant Efron 🤵🏻‍♂️"
-    amount = 3.00
-    message = f"""Good news old sport!
+    description = "T-Mobile bill dated " + month + " — Sent by Ilya's assistant iHustler"
+    amount = friend["amount"]
+    message = f"""✅ Good news everyone!
 
 I have successfully requested money from {name}.
 
-— Efron 🤵🏻‍♂️
+— iHustler 🤵🏻‍♂️
+    """
+    
+    message_fail = f"""❌ Bad news everyone!
+
+Something went wrong when I requested money from {name}.
+
+— iHustler 🤵🏻‍♂️
     """
     success = venmo.request_money(id, amount, description, telegram.send_message(message))
     if success:
       successfulRequests.append(success)
+    else:
+      telegram.send_message(message)
 
   if len(successfulRequests) == expectedRequests:
     print("✅ Ran script successfully and sent " + str(expectedRequests) + " Venmo requests.")
