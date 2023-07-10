@@ -26,39 +26,37 @@ def main(now):
       "name": "I",
       "id": i_friend_id,
       "amount": 40.00,
-      "addons": ""
+      "addons": "",
     },
     {
       "name": "J",
       "id": j_friend_id,
       "amount": 40.00,
-      "addons": ""
+      "addons": "",
     },
-#     {
-#       "name": "K",
-#       "id": k_friend_id,
-#       "amount": 40.00,
-#       "addons": ""
-#     },
+    {
+      "name": "K",
+      "id": k_friend_id,
+      "amount": 40.00,
+      "addons": "",
+    },
     {
       "name": "L",
       "id": l_friend_id,
       "amount": 30.00,
-      "addons": "and YT Premium"
+      "addons": "and YT Premium",
     },
     {
       "name": "S",
       "id": s_friend_id,
       "amount": 45.00,
-      "addons": "and YT Premium"
+      "addons": "and YT Premium",
     },
     {
       "name": "Y",
       "id": y_friend_id,
-      "amount": 40.00,
-      "addons": "",
-#       "amount": 45.00,
-#       "addons": "and Disney + Paramount"
+      "amount": 45.00,
+      "addons": "and Disney + Paramount",
     },
   ]
 
