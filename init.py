@@ -61,8 +61,8 @@ def main(now):
     {
       "name": "P",
       "id": p_friend_id,
-      "amount": 70.00,
-      "addons": "",
+      "amount": 75.00,
+      "addons": "and Disney + Paramount",
     },
   ]
 
