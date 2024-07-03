@@ -44,6 +44,4 @@ jobs:
           S_FRIEND_ID: ${{ secrets.S_FRIEND_ID }}
           Y_FRIEND_ID: ${{ secrets.Y_FRIEND_ID }}
           P_FRIEND_ID: ${{ secrets.P_FRIEND_ID }}
-      - name: Keepalive Workflow
-        uses: gautamkrishnar/keepalive-workflow@v2
             
