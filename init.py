@@ -25,8 +25,8 @@ def main(now):
     {
       "name": "I",
       "id": i_friend_id,
-      "amount": 40.00,
-      "addons": "",
+      "amount": 45.00,
+      "addons": "and YT Premium",
     },
     {
       "name": "J",
