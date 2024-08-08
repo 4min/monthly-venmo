@@ -37,8 +37,8 @@ def main(now):
     {
       "name": "K",
       "id": k_friend_id,
-      "amount": 47.00,
-      "addons": "Disney + Hulu + ESPN",
+      "amount": 40.00,
+      "addons": "",
     },
     {
       "name": "L",
@@ -55,7 +55,7 @@ def main(now):
     {
       "name": "Y",
       "id": y_friend_id,
-      "amount": 49.00,
+      "amount": 52.00,
       "addons": "and Disney + Hulu + ESPN + Paramount",
     },
     {
