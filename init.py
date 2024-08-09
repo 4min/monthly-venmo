@@ -26,13 +26,13 @@ def main(now):
       "name": "I",
       "id": i_friend_id,
       "amount": 45.00,
-      "addons": "and YT Premium",
+      "addons": "and YTP",
     },
     {
       "name": "J",
       "id": j_friend_id,
       "amount": 52.00,
-      "addons": "and YT Premium + Disney + Hulu + ESPN",
+      "addons": "and YTP + D++",
     },
     {
       "name": "K",
@@ -44,25 +44,25 @@ def main(now):
       "name": "L",
       "id": l_friend_id,
       "amount": 30.00,
-      "addons": "and YT Premium",
+      "addons": "and YTP",
     },
     {
       "name": "S",
       "id": s_friend_id,
       "amount": 45.00,
-      "addons": "and YT Premium",
+      "addons": "and YTP",
     },
     {
       "name": "Y",
       "id": y_friend_id,
       "amount": 49.00,
-      "addons": "and Disney + Hulu + ESPN + Paramount",
+      "addons": "and D++ + PP",
     },
     {
       "name": "P",
       "id": p_friend_id,
       "amount": 75.00,
-      "addons": "and Disney + Paramount",
+      "addons": "and D+ + PP",
     },
   ]
 
@@ -72,7 +72,7 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "T-Mobile bill dated " + month + " " + friend["addons"]
+    description = "TMO bill dated " + month + " " + friend["addons"]
     amount = friend["amount"]
     # print(venmo.get_user_id_by_username(id))
     message = f"""✅ Good news everyone!
