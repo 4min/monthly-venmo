@@ -31,8 +31,8 @@ def main(now):
     {
       "name": "J",
       "id": j_friend_id,
-      "amount": 52.00,
-      "addons": "and YTP + D++",
+      "amount": 54.00,
+      "addons": "and YTP + D++ + MX",
     },
     {
       "name": "K",
@@ -55,8 +55,8 @@ def main(now):
     {
       "name": "Y",
       "id": y_friend_id,
-      "amount": 49.00,
-      "addons": "and D++ + PP",
+      "amount": 51.00,
+      "addons": "and D++ + MX + PP",
     },
     {
       "name": "P",
