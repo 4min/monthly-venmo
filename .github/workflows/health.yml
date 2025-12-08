@@ -8,6 +8,11 @@ on:
     # Every Sunday at 5pm UST = 10am PST
     - cron: "0 17 * * 0"
   workflow_dispatch:
+    inputs:
+      month:
+        description: 'Month to charge for'     
+        required: true
+        default: ''
 
 jobs:
   run:
@@ -44,4 +49,5 @@ jobs:
           S_FRIEND_ID: ${{ secrets.S_FRIEND_ID }}
           Y_FRIEND_ID: ${{ secrets.Y_FRIEND_ID }}
           P_FRIEND_ID: ${{ secrets.P_FRIEND_ID }}
+          MONTH_STR: ${{ github.event.inputs.month }}
             
