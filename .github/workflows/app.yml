@@ -9,6 +9,11 @@ on:
     # https://crontab.guru/#0_16_9_*_*
     - cron: "0 16 9 * *"
   workflow_dispatch:
+    inputs:
+      month:
+        description: 'Month to charge for'     
+        required: true
+        default: ''
 
 jobs:
   run:
