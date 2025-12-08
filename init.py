@@ -15,9 +15,12 @@ def main(now):
   for var in env_vars:
     actualVars.append(get_env(var))
 
-  access_token, chat_id, bot_token, i_friend_id, j_friend_id, k_friend_id, l_friend_id, s_friend_id, y_friend_id, p_friend_id = actualVars
+  access_token, chat_id, bot_token, i_friend_id, j_friend_id, k_friend_id, l_friend_id, s_friend_id, y_friend_id, p_friend_id, month_str = actualVars
 
   month = get_month(now)
+  if month_str:
+    month = month_str
+  
   venmo = Venmo(access_token)
   telegram = Telegram(bot_token, chat_id)
 
