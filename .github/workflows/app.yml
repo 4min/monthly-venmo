@@ -50,4 +50,4 @@ jobs:
           S_FRIEND_ID: ${{ secrets.S_FRIEND_ID }}
           Y_FRIEND_ID: ${{ secrets.Y_FRIEND_ID }}
           P_FRIEND_ID: ${{ secrets.P_FRIEND_ID }}
-          MONTH_STR: ${{ github.event.inputs.month }}
+          MONTH_STR: ${{ inputs.month }}
